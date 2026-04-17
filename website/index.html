@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="chunk.jpg">
+    <title>Charles Cookie Company</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        
+        .box{
+            border: 2px solid;
+            height: auto;
+            width: 50%;
+            padding: 10px;
+            float: left;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table th, table td{
+            border: 1px solid rgb(214, 214, 214);
+            padding: 11px;
+        }
+        .table-section{
+            overflow-x: auto;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="image/crinkle.jpg" alt="Logo" class="nav-logo">
+            <span class="nav-title">Charles Cookie Company</span>
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="recipe.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="mailto:charlieajileye@gmail.com">Contact Us</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Charles Cookie Company</h1><hr>
+        <h2>We Satisfy Your Taste!</h2>
+        
+        <div class="content-section">
+            <image src="image/cookie.jpg"
+            height="220"
+            alt="cookie picture">
+       
+            <p style="color: rgb(27, 23, 4);">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vel voluptatem unde nam <span style="color: red;">quam molestiae excepturi laboriosam </span>beatae asperiores veritatis, omnis repellendus? Maxime quidem eveniet neque cum perspiciatis enim saepe!</p>
+
+            <a href="recipe.html"
+                target="_blank"
+                title="recipe">
+                check out our recipe here
+            </a><br><br>
+        </div>
+        
+        <div class="table-section">
+            <table border="0" style="background-color: black;">
+                <th colspan="9" style="background-color: white; text-align: center;">Store Hours</th>
+                <tr style="text-align: center; background-color: lightskyblue">
+                    <th width="90">Week-Days</th>
+                    <th width="90">Monday</th>
+                    <th width="90">Tuesday</th>
+                    <th width="90">Wednesday</th>
+                    <th width="90">Thursday</th>
+                    <th width="90">Thursday</th>
+                    <th width="90">Friday</th>
+                    <th width="90">Saturday</th>
+                    <th width="90">Sunday</th>
+                </tr>
+                <tr align="center" style="background-color: lightblue">
+                    <td>Open Hours</td>
+                    <td>8am-5pm</td>
+                    <td>8am-5pm</td>
+                    <td>8am-5pm</td>
+                    <td>8am-5pm</td>
+                    <td>8am-5pm</td>
+                    <td>8am-5pm</td>
+                    <td>9am-3pm</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+        </div><br>
+
+        <div class="form-section">
+            <h2>Join Us</h2>
+            <form action="index.php" method="POST" enctype="multipart/form-data">
+
+                <!-- Two-column grid for the fields -->
+                <div class="form-grid">
+
+                    <!-- LEFT COLUMN -->
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="Username">Username:</label>
+                            <input type="text" id="Username" minlength="8" maxlength="20" placeholder="spongebob" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Password">Password:</label>
+                            <input type="password" id="Password" minlength="8" maxlength="15" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bday">Birthdate:</label>
+                            <input type="date" id="bday" required>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="form-col">
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="squarepants@gmail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Number">Number:</label>
+                            <input type="tel" id="Number" placeholder="07012345678" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="file">File:</label>
+                            <input type="file" id="file">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Title radio — full width row -->
+                <div class="form-group">
+                    <label>Title:</label>
+                    <div class="radio-options">
+                        <label for="Mr.">Mr.</label>
+                        <input type="radio" id="Mr." value="Mr." name="title">
+                        <label for="Mrs.">Mrs.</label>
+                        <input type="radio" id="Mrs." value="Mrs." name="title">
+                        <label for="Dr.">Dr.</label>
+                        <input type="radio" id="Dr." value="Dr." name="title">
+                    </div>
+                </div>
+
+                <!-- Centered buttons -->
+                <div class="form-buttons">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt ab sequi sapiente voluptate. Debitis quia eaque ad asperiores rerum natus iusto id eum quasi! Ipsa ex delectus autem officia id.</p>
+            </form>
+        </div>
+
+        <div class="list-section">
+            <h2 id="h2v"><u>Cookie flavours</u></h2>
+            <ul>
+                <li onclick="document.getElementById('modal1').style.display='flex'">Chocolate Chip</a></li>
+                <li onclick="document.getElementById('modal2').style.display='flex'"></a>Crinkle Cookie</li>
+                <li onclick="document.getElementById('modal3').style.display='flex'"></a>Peanut Butter</li>
+                <li onclick="document.getElementById('modal4').style.display='flex'"></a>Snickerdoodle</li>
+                <li onclick="document.getElementById('modal5').style.display='flex'"></a>Red Velvet</li>
+                
+            </ul>
+        </div>
+    </div>
+
+    <!-- MODAL -->
+    <div id="modal1" class="modal-all">
+        <div class="modal-box">
+            <h3>Chocolate Chip</h3>
+            <p>Soft or slightly crispy cookie with sweet dough filled with chocolate chips.</p>
+            <button class="modal-close" onclick="document.getElementById('modal1').style.display='none'">Close</button>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal-all">
+        <div class="modal-box">
+            <h3>Crinkle Cookie</h3>
+            <p>Soft, fudgy cookie with a cracked surface, usually coated in powdered sugar.</p>
+            <button class="modal-close" onclick="document.getElementById('modal2').style.display='none'">Close</button>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal-all">
+        <div class="modal-box">
+            <h3>Peanut Butter</h3>
+            <p>Rich, nutty cookie made with Peanut butter, often with a crisscross fork pattern.</p>
+            <button class="modal-close" onclick="document.getElementById('modal3').style.display='none'" >Close</button>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal-all">
+        <div class="modal-box">
+            <h3>Snickerdoodle</h3>
+            <p>Soft, slightly tangy cookie rolled in cinnamon sugar.</p>
+            <button class="modal-close" onclick="document.getElementById('modal4').style.display='none'" >Close</button>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal-all">
+        <div class="modal-box">
+            <h3>Red Velvet</h3>
+            <p>Soft cookie with a mild cocoa flavor and red color, often paired with cream cheese taste.</p>
+            <button class="modal-close" onclick="document.getElementById('modal5').style.display='none'" >Close</button>
+        </div>
+    </div>
+
+</body>    
+</html>
